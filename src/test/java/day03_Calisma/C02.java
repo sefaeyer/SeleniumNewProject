@@ -32,7 +32,7 @@ public class C02 {
 
         //under 200 olani tiklatin
         WebElement we1 = driver.findElement(By.xpath("//span[.='$200 to $500']"));//attribute ismi yoksa "." koy
-        we1.click();
+        we1.click();                    //tagName[@type='text']
 
         driver.close();
 
