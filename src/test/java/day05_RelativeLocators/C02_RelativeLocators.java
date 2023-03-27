@@ -25,6 +25,7 @@ public class C02_RelativeLocators {
         //Berlin’i 3 farkli relative locator ile locate edin
         WebElement NYCWebElement = driver.findElement(By.id("pid3_thumb"));
         WebElement bayAreaWebElement = driver.findElement(By.id("pid8_thumb"));
+
         WebElement berlinWebElement = driver.findElement(with(By.tagName("img")).below(NYCWebElement).toLeftOf(bayAreaWebElement));
 
         berlinWebElement.click();
